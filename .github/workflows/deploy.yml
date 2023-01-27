@@ -3,11 +3,12 @@ on:
   push:
     branches:
       - main
+  environment: .env.production
+
 jobs:
   build:
     name: Build
     runs-on: ubuntu-latest
-    environment: .env.production
 
     steps:
       - name: Checkout repo
