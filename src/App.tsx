@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <h1>安安安安安安安安安安安安安安安安</h1>
       <>{console.log(import.meta.env.VITE_TEST)}</>
-      <>ver1</>
+      <>ver2</>
       <p>{import.meta.env.VITE_TEST}</p>
       <div>
         <a href="https://vitejs.dev" target="_blank">
