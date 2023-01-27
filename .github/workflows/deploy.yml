@@ -3,12 +3,11 @@ on:
   push:
     branches:
       - main
-environment: .env.production
-
 jobs:
   build:
     name: Build
     runs-on: ubuntu-latest
+    environment: .env.production
 
     steps:
       - name: Checkout repo
@@ -24,6 +23,8 @@ jobs:
 
       - name: Build project
         run: yarn build
+        env:
+          VITE_TEST: ${{secrets.VITE_TEST}}
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v2
