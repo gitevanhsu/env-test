@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <h1>安安安安安安安安安安安安安安安安</h1>
-      {console.log(import.meta.env.VITE_TEST)}
+      <>{console.log(import.meta.env.VITE_TEST)}</>
       <p>{import.meta.env.VITE_TEST}</p>
       <div>
         <a href="https://vitejs.dev" target="_blank">
